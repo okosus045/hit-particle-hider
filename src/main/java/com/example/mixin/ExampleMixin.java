@@ -23,7 +23,7 @@ public class ExampleMixin {
         }
 
         if (System.currentTimeMillis() - lastHitTime < BLIND_DURATION) {
-            ci.cancel(); // Отключаем частицы, если прошло меньше 13 секунд после удара
+            ci.cancel(); // Блокируем частицы на 13 секунд
         }
     }
 }
